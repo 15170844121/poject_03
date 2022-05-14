@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.section3{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: url(../img/bg3.png) no-repeat;
+	background-size: 100% 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.section3>.box{
+	width: calc(685rem/100);
+	height: calc(575rem/100);
+	border: calc(5rem/100) solid #db864f;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: calc(200rem/100);
+	padding: calc(30rem/100);
+}
+.section3>p{
+	color: #70533e;
+	font-size: calc(36rem/100);
+	margin-left: calc(20rem/100);
+}
+.section3>.box2{
+	width: calc(686rem/100);
+	height: calc(366rem/100);
+	border: calc(5rem/100) solid #db864f;
+	box-sizing: border-box;
+		margin: 0 auto;
+		padding: calc(30rem/100);
+}
+.box>.back{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.box>.back>li{
+	width: calc(60rem/100);
+	height: calc(235rem/100);
+	text-align: center;
+	font-size: calc(35rem/100);
+	background: url(../img/star.png) no-repeat;
+	background-size: 100% 100%;
+}
+.box>.winter{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.box>.winter>li{
+	width: calc(60rem/100);
+	height: calc(235rem/100);
+	text-align: center;
+	font-size: calc(35rem/100);
+	background: url(../img/star1.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: calc(25rem/100);
+}
+.box2>.center{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.box2>.center>li{
+	width: calc(60rem/100);
+	height: calc(235rem/100);
+	text-align: center;
+	font-size: calc(35rem/100);
+	background: url(../img/star.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: calc(25rem/100);
+}
+.box>.winter>.sn{
+	width: calc(60rem/100);
+	height: calc(235rem/100);
+	background: url(../img/star.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sh{
+	background: url(../img/star.png) no-repeat;
+	animation: mouse 1s linear infinite alternate;
+}
+.log{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(100,100,100,0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.log>.cuo{
+	width: calc(300rem/100);
+	height: calc(300rem/100);
+	background-color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.log>.cuo>.yuan{
+	width: calc(100rem/100);
+	height: calc(100rem/100);
+	font-size: calc(40rem/100);
+	text-align: center;
+	line-height: calc(100rem/100);
+	border-radius: 50%;
+	margin: 0 auto;
+	color: #FFFFFF;
+	margin-top: calc(10rem/100);
+	background-color: rgb(32,33,34,0.5);
+}
+.log>.cuo>p{
+	font-size: calc(45rem/100);
+    margin-left: calc(35rem/100);
+    margin-top: calc(20rem/100);
+}
+.log>.cuo>.jiao{
+	width: calc(200rem/100);
+	height: calc(50rem/100);
+	margin: 0 auto;
+	background-color: deepskyblue;
+	border-radius: calc(20rem/100);
+	margin-top: calc(20rem/100);
+	text-align: center;
+	line-height:  calc(50rem/100);
+	font-size: calc(30rem/100);
+	color: #FFFFFF;
+}
+.log>.cuo>.img1{
+	position: absolute;
+	top: calc(-30rem/100);
+	left: calc(-10rem/100);
+}
+.log>.cuo>.img2{
+	position: absolute;
+	bottom: calc(-30rem/100);
+	right: calc(-50rem/100);
+	transform: rotate(180deg);
+}
+
+.gongxi{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(100,100,100,0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.gongxi>.cuo{
+	width: calc(300rem/100);
+	height: calc(300rem/100);
+	background-color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.gongxi>.cuo>.yuan{
+	width: calc(300rem/100);
+	height: calc(200rem/100);
+	background-color: pink;
+	text-align: center;
+	line-height: calc(200rem/100);
+	font-size: calc(45rem/100);
+}
+.gongxi>.cuo>p{
+	font-size: calc(45rem/100);
+    margin-left: calc(35rem/100);
+    margin-top: calc(20rem/100);
+}
+.gongxi>.cuo>.jiao{
+	width: calc(200rem/100);
+	height: calc(50rem/100);
+	margin: 0 auto;
+	background-color: deepskyblue;
+	border-radius: calc(20rem/100);
+	margin-top: calc(20rem/100);
+	text-align: center;
+	line-height:  calc(50rem/100);
+	font-size: calc(30rem/100);
+	color: #FFFFFF;
+}
+@keyframes mouse{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.2);
+	}
+}

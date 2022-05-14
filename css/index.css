@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.section1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg1.png) no-repeat;
+	background-size: 100% 100%;
+	background-color: aqua;
+	position: relative;
+	display: block;
+}
+.music>img{
+	width: calc(50rem/100);
+	height: calc(50rem/100);
+	position: absolute;
+	top: calc(40rem/100);
+	right: calc(45rem/100);
+	animation: music 2s linear infinite alternate paused;
+}
+.xing1>img{
+	position: absolute;
+	top: calc(20rem/100);
+	left: calc(100rem/100);
+	animation: move 1s linear infinite alternate;
+}
+.xing2>img{
+	position: absolute;
+	top: calc(450rem/100);
+	left: 0;
+	animation: move 1s linear infinite alternate;
+}
+.xing3>img{
+    position: absolute;
+	bottom: calc(433rem/100);
+	right: calc(50rem/100);
+	animation: move 1s linear infinite alternate;
+}
+.zy>img{
+	width: calc(70rem/100);
+	height: calc(70rem/100);
+	position: absolute;
+	bottom: calc(400rem/100);
+	right: calc(35rem/100);
+}
+.cs{
+	font-size: calc(36rem/100);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: calc(950rem/100);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.cs>li{
+	width: calc(210rem/100);
+	height: calc(54rem/100);
+	margin-top: calc(30rem/100);
+	text-align: center;
+	line-height: calc(54rem/100);
+	background: url(../img/jinru.png);
+}
+.zhezhao{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(100,100,100,0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.zhezhao>.cuo{
+	width: calc(300rem/100);
+	height: calc(300rem/100);
+	background-color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.zhezhao>.cuo>.yuan{
+	width: calc(100rem/100);
+	height: calc(100rem/100);
+	font-size: calc(40rem/100);
+	text-align: center;
+	line-height: calc(100rem/100);
+	border-radius: 50%;
+	margin: 0 auto;
+	color: #FFFFFF;
+	margin-top: calc(10rem/100);
+	background-color: rgb(32,33,34,0.5);
+}
+.zhezhao>.cuo>p{
+	font-size: calc(30rem/100);
+    margin-left: calc(35rem/100);
+    margin-top: calc(20rem/100);
+}
+.zhezhao>.cuo>.jiao{
+	width: calc(200rem/100);
+	height: calc(50rem/100);
+	margin: 0 auto;
+	background-color: deepskyblue;
+	border-radius: calc(20rem/100);
+	margin-top: calc(20rem/100);
+	text-align: center;
+	line-height:  calc(50rem/100);
+	font-size: calc(30rem/100);
+	color: #FFFFFF;
+}
+.zhezhao>.cuo>.img1{
+	position: absolute;
+	top: calc(-30rem/100);
+	left: calc(-10rem/100);
+}
+.zhezhao>.cuo>.img2{
+	position: absolute;
+	bottom: calc(-30rem/100);
+	right: calc(-10rem/100);
+	transform: rotate(180deg);
+}
+@keyframes move{
+	from{
+		transform: scale();
+	}
+	to{
+		transform: scale(1.2);
+	}
+}
+@keyframes music{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

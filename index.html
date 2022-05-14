@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 移动端适配 -->
+		<script type="text/javascript">
+			let scale = 1 /window.devicePixelRatio;
+			let text = `<meta name="viewport" content="width=device-width,initial-scale=${scale},minimum-scale=${scale},maximum-scale=${scale}" />`;
+			document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px';
+			
+			// 进入移动端自动刷新
+			window.onresize = function(){
+				window.location.reload();
+			}
+		</script>
+		<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/two.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/three.css"/>
+	</head>
+	<body>
+		<audio src="music/BGM.mp3" loop="loop" >
+			
+		</audio>
+		<div class="zhezhao">
+			<div class="cuo">
+				<img src="img/xingxing1.png" class="img1" >
+				<img src="img/xingxing2.png" class="img2" >
+				<div class="yuan">X</div>
+				<p>请先完成测试哦</p>
+				<div class="jiao">好的</div>
+			</div>
+		</div>
+		<div class="section1">
+			<div class="music">
+				<img src="img/music.png" >
+			</div>
+			<div class="xing1">
+				<img src="img/xingxing1.png" />
+			</div>
+			<div class="xing2">
+				<img src="img/xingxing2.png" />
+			</div>
+			<div class="xing3">
+				<img src="img/xingxing3.png" />
+			</div>
+			<div class="zy">
+				<img src="img/签到.png" >
+			</div>
+			<ul class="cs">
+				<li>诗词测试</li>
+				<li>单词练习</li>
+				<li>数学测试</li>
+			</ul>
+		</div>
+		<div class="section2">
+			<div class="login">
+				<img src="img/loading.png" >
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span>0%</span>
+			</div>
+		</div>
+		<div class="log">
+			<div class="cuo">
+				<img src="img/xingxing1.png" class="img1" >
+				<img src="img/xingxing2.png" class="img2" >
+				<div class="yuan">X</div>
+				<p>答错了哦！</p>
+				<div class="jiao">再答一次</div>
+			</div>
+		</div>
+		</div>
+		<div class="section3">
+			<div class="box">
+				<ul class="back">
+					<li>窗前明月光</li>
+					<li>鱼戏莲叶东</li>
+					<li>白毛浮绿水</li>
+					<li>春眠不觉晓</li>
+					<li>小娃撑消停</li>
+				</ul>
+				<ul class="winter">
+					<li class="sh"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<p>&lt; 拖放下面诗词,到对应位置 &gt;</p>
+			<div class="box2">
+				<ul class="center">
+					<li>鱼戏莲叶西</li>
+					<li>红掌拨清波</li>
+					<li>疑是地上霜</li>
+					<li>处处闻啼鸟</li>
+					<li>偷采白莲回</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gongxi">
+			<div class="cuo">
+				<div class="yuan">恭喜测试成功</div>
+				<div class="jiao">返回首页</div>
+			</div>
+		</div>
+	</body>
+</html>
